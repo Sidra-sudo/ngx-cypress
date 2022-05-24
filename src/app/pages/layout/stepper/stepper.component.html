@@ -4,25 +4,25 @@
       <nb-step [label]="labelOne">
         <ng-template #labelOne>First step</ng-template>
         <h3>Step content #1</h3>
-        <button nbButton disabled nbStepperNext>prev</button>
-        <button nbButton nbStepperNext>next</button>
+        <button nbButton disabled nbStepperNext test-id="prev1">prev</button>
+        <button nbButton nbStepperNext test-id="next1">next</button>
       </nb-step>
       <nb-step [label]="labelTwo">
         <ng-template #labelTwo>Second step</ng-template>
         <h3>Step content #2</h3>
-        <button nbButton nbStepperPrevious>prev</button>
-        <button nbButton nbStepperNext>next</button>
+        <button nbButton nbStepperPrevious test-id="prev2">prev</button>
+        <button nbButton nbStepperNext test-id="next2">next</button>
       </nb-step>
       <nb-step label="Third step">
         <h3>Step content #3</h3>
-        <button nbButton nbStepperPrevious>prev</button>
-        <button nbButton nbStepperNext>next</button>
+        <button nbButton nbStepperPrevious test-id="prev3">prev</button>
+        <button nbButton nbStepperNext test-id="next3">next</button>
       </nb-step>
       <nb-step [label]="labelFour">
         <ng-template #labelFour>Fourth step</ng-template>
         <h3>Step content #4</h3>
-        <button nbButton nbStepperPrevious>prev</button>
-        <button nbButton disabled nbStepperNext>next</button>
+        <button nbButton nbStepperPrevious test-id="prev4">prev</button>
+        <button nbButton disabled nbStepperNext test-id="next4">next</button>
       </nb-step>
     </nb-stepper>
   </nb-card-body>
@@ -40,10 +40,10 @@
                 my shizz pimpin', shizzle my nizzle crocodizzle shut the shizzle up, gravida vizzle, dang.
               </p>
               <div class="input-group">
-                <input type="text" placeholder="Enter your name" class="form-control" formControlName="firstCtrl"
+                <input type="text" placeholder="Enter your name" test-id="EnterName" class="form-control" formControlName="firstCtrl"
                        [ngClass]="{'form-control-danger': firstForm.invalid && (firstForm.dirty || firstForm.touched)}">
               </div>
-              <button nbButton nbStepperNext>next</button>
+              <button nbButton nbStepperNext test-id="next5">next</button>
             </form>
           </nb-step>
           <nb-step [stepControl]="secondForm" label="Second step">
@@ -54,11 +54,11 @@
                 Maurizzle cool nibh owned turpizzle. My shizz fo shizzle tortor.
               </p>
               <div class="input-group">
-                <input type="text" placeholder="Enter favorite movie" class="form-control" formControlName="secondCtrl"
+                <input type="text" placeholder="Enter favorite movie" test-id="EnterMovie" class="form-control" formControlName="secondCtrl"
                        [ngClass]="{'form-control-danger': secondForm.invalid && (secondForm.dirty || secondForm.touched)}">
               </div>
-              <button nbButton nbStepperPrevious>prev</button>
-              <button nbButton nbStepperNext>next</button>
+              <button nbButton nbStepperPrevious test-id="prev5">prev</button>
+              <button nbButton nbStepperNext test-id="next6">next</button>
             </form>
           </nb-step>
           <nb-step [stepControl]="thirdForm" label="Third step">
@@ -67,17 +67,17 @@
                 Things boom shackalack rhoncus yo. In fo shizzle my nizzle gangsta platea dictumst. Check it out pot.
               </p>
               <div class="input-group">
-                <input type="text" placeholder="Enter something" class="form-control" formControlName="thirdCtrl"
+                <input type="text" placeholder="Enter something" test-id="EnterSomething" class="form-control" formControlName="thirdCtrl"
                        [ngClass]="{'form-control-danger': thirdForm.invalid && (thirdForm.dirty || thirdForm.touched)}">
               </div>
-              <button nbButton nbStepperPrevious>prev</button>
-              <button nbButton nbStepperNext>Confirm</button>
+              <button nbButton nbStepperPrevious test-id="prev6">prev</button>
+              <button nbButton nbStepperNext test-id="confirm">Confirm</button>
             </form>
           </nb-step>
           <nb-step [stepControl]="thirdForm" [hidden]="true" label="Third step">
             <div class="step-container">
               <h3>Wizard completed!</h3>
-              <button nbButton (click)="stepper.reset()">Try again</button>
+              <button nbButton (click)="stepper.reset()" test-id="tryagain">Try again</button>
             </div>
           </nb-step>
         </nb-stepper>
@@ -89,7 +89,7 @@
     <nb-card size="medium">
       <nb-card-body>
         <nb-stepper orientation="vertical">
-          <nb-step label="First step">
+          <nb-step label="First step" id="first1">
             <h3>Step content #1</h3>
             <p class="lorem">
               Proin varius accumsan semper. Praesent consequat tincidunt sagittis. Curabitur egestas sem a ipsum bibendum,
@@ -97,8 +97,8 @@
               viverra ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent metus turpis, commodo vel
               placerat quis, lobortis in ligula.
             </p>
-            <button nbButton disabled nbStepperNext>prev</button>
-            <button nbButton nbStepperNext>next</button>
+            <button nbButton disabled nbStepperNext test-id="prev7">prev</button>
+            <button nbButton nbStepperNext test-id="next7">next</button>
           </nb-step>
           <nb-step label="Second step">
             <h3>Step content #2</h3>
@@ -107,8 +107,8 @@
               sed ornare magna. Mauris vitae laoreet diam. Mauris fermentum ligula at lacinia semper. Nulla placerat dui
               eu sapien pellentesque, eu placerat leo luctus. Cras pharetra blandit fermentum.
             </p>
-            <button nbButton nbStepperPrevious>prev</button>
-            <button nbButton nbStepperNext>next</button>
+            <button nbButton nbStepperPrevious test-id="prev8">prev</button>
+            <button nbButton nbStepperNext test-id="next8">next</button>
           </nb-step>
           <nb-step label="Third step">
             <h3>Step content #3</h3>
@@ -123,8 +123,8 @@
               sed ornare magna. Mauris vitae laoreet diam. Mauris fermentum ligula at lacinia semper. Nulla placerat dui
               eu sapien pellentesque, eu placerat leo luctus. Cras pharetra blandit fermentum.
             </p>
-            <button nbButton nbStepperPrevious>prev</button>
-            <button nbButton nbStepperNext>next</button>
+            <button nbButton nbStepperPrevious test-id="prev9">prev</button>
+            <button nbButton nbStepperNext test-id="next9">next</button>
           </nb-step>
           <nb-step label="Fourth step">
             <h3>Step content #4</h3>
@@ -133,8 +133,8 @@
               sit amet fringilla orci efficitur. Nam bibendum lectus ut viverra tristique. Fusce eu pulvinar magna, quis
               viverra ex.
             </p>
-            <button nbButton nbStepperPrevious>prev</button>
-            <button nbButton disabled nbStepperNext>next</button>
+            <button nbButton nbStepperPrevious test-id="prev10">prev</button>
+            <button nbButton disabled nbStepperNext test-id="next10">next</button>
           </nb-step>
         </nb-stepper>
       </nb-card-body>
