@@ -20,6 +20,7 @@ describe('Our first suite',() => {
     it('Layout Feature',() => {
         cy.contains('Layout').click()
         cy.contains('Stepper').click()
+        cy.get('[test-id="next1"]').click()
         cy.contains('Accordion').click()
     })
 
