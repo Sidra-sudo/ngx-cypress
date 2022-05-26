@@ -11,7 +11,7 @@ describe('NGX Admin Layout Feature', () => {
             Layout.ClickLayout()
             .click()
         })
-        it('Should verify Stepper is under Layout is clickable', () => {
+        it('Should verify Stepper under Layout is clickable', () => {
             Layout.ClickStepper()
             .click()
         })
