@@ -154,14 +154,14 @@ describe('NGX Admin Layout Feature', () => {
             Form.ClickCommonDatepicker()
             .click()
         })
-        // it('Should verify that user is able to click on back button of calendar Form picker from Common date picker', () => {
-        //     Form.Clickbackbutton()
-        //     .click()
-        // })
-        // it('Should verify that Datepicker is clickable', () => {
-        //     Form.clicknextbutton()
-        //     .click()
-        // })
+        it('Should verify that user is able to click on back button of calendar Form picker from Common date picker', () => {
+            Form.Clickbackbutton()
+            .click()
+        })
+        it('Should verify that Datepicker is clickable', () => {
+            Form.clicknextbutton()
+            .click()
+        })
         it('Should verify that user is able to click on particular date from calendar in common date picker', () => {
             Form.ClickonDate()
             .click()

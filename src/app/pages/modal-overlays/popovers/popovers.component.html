@@ -4,10 +4,10 @@
       <nb-card-header>Popover Position</nb-card-header>
       <nb-card-body>
         <p>When popover has not enough space based on the configured placement, it will adjust accordingly trying to fit the screen.</p>
-        <button nbButton status="danger" nbPopover="Hello, how are you today?" nbPopoverTrigger="hint" nbPopoverPlacement="left">Left</button>
-        <button nbButton status="danger" nbPopover="Hello, how are you today?" nbPopoverTrigger="hint" nbPopoverPlacement="top">Top</button>
-        <button nbButton status="danger" nbPopover="Hello, how are you today?" nbPopoverTrigger="hint" nbPopoverPlacement="bottom">Bottom</button>
-        <button nbButton status="danger" nbPopover="Hello, how are you today?" nbPopoverTrigger="hint" nbPopoverPlacement="right">Right</button>
+        <button nbButton status="danger" nbPopover="Hello, how are you today?" nbPopoverTrigger="hint" nbPopoverPlacement="left" test-id="left">Left</button>
+        <button nbButton status="danger" nbPopover="Hello, how are you today?" nbPopoverTrigger="hint" nbPopoverPlacement="top" test-id="top">Top</button>
+        <button nbButton status="danger" nbPopover="Hello, how are you today?" nbPopoverTrigger="hint" nbPopoverPlacement="bottom" test-id="bottom">Bottom</button>
+        <button nbButton status="danger" nbPopover="Hello, how are you today?" nbPopoverTrigger="hint" nbPopoverPlacement="right" test-id="right">Right</button>
       </nb-card-body>
     </nb-card>
   </div>
@@ -17,9 +17,9 @@
       <nb-card-header>Simple Popovers</nb-card-header>
       <nb-card-body>
         <p>In a simples form popover can take a string of text to render.</p>
-        <button nbButton status="success" nbPopover="Hello, how are you today?">on click</button>
-        <button nbButton status="success" nbPopover="Hello, how are you today?" nbPopoverTrigger="hover">on hover</button>
-        <button nbButton status="success" nbPopover="Hello, how are you today?" nbPopoverTrigger="hint">on hint</button>
+        <button nbButton status="success" nbPopover="Hello, how are you today?" test-id="click">on click</button>
+        <button nbButton status="success" nbPopover="Hello, how are you today?" nbPopoverTrigger="hover" test-id="hover">on hover</button>
+        <button nbButton status="success" nbPopover="Hello, how are you today?" nbPopoverTrigger="hint" test-id="hint">on hint</button>
       </nb-card-body>
     </nb-card>
   </div>
@@ -30,12 +30,12 @@
 
     <ng-template #tabs>
       <nb-tabset>
-        <nb-tab tabTitle="What's up?">
+        <nb-tab tabTitle="Whats up?" test-id="what's Up">
           <div class="p-4">
             Such a wonderful day!
           </div>
         </nb-tab>
-        <nb-tab tabTitle="Second Tab">
+        <nb-tab tabTitle="Second Tab" test-id="secondtab">
           <div class="p-4">
             Indeed!
           </div>
@@ -47,15 +47,15 @@
       <div class="p-4">
         <form>
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Recipients">
+            <input type="text" class="form-control" placeholder="Recipients" test-id="recipients">
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Subject">
+            <input type="text" class="form-control" placeholder="Subject" test-id="subject">
           </div>
           <div class="form-group">
-            <textarea class="form-control" placeholder="Message"></textarea>
+            <textarea class="form-control" placeholder="Message" test-id="message"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary w-100">Send</button>
+          <button type="submit" class="btn btn-primary w-100" test-id="send">Send</button>
         </form>
       </div>
     </ng-template>
@@ -76,9 +76,9 @@
       <nb-card-header>Template Popovers</nb-card-header>
       <nb-card-body>
         <p>You can pass a refference to `ng-template` to be rendered.</p>
-        <button nbButton status="warning" [nbPopover]="tabs">With tabs</button>
-        <button nbButton status="warning" [nbPopover]="form">With form</button>
-        <button nbButton status="warning" [nbPopover]="card">With card</button>
+        <button nbButton status="warning" [nbPopover]="tabs" test-id="tab1">With tabs</button>
+        <button nbButton status="warning" [nbPopover]="form" test-id="form1">With form</button>
+        <button nbButton status="warning" [nbPopover]="card" test-id="card1">With card</button>
       </nb-card-body>
     </nb-card>
   </div>
@@ -88,9 +88,9 @@
       <nb-card-header>Component Popovers</nb-card-header>
       <nb-card-body>
         <p>Same way popover can render any angular compnoent.</p>
-        <button nbButton status="warning" [nbPopover]="tabsComponent">With tabs</button>
-        <button nbButton status="warning" [nbPopover]="formComponent">With form</button>
-        <button nbButton status="warning" [nbPopover]="cardComponent">With card</button>
+        <button nbButton status="warning" [nbPopover]="tabsComponent" test-id="tab2">With tabs</button>
+        <button nbButton status="warning" [nbPopover]="formComponent" test-id="form2">With form</button>
+        <button nbButton status="warning" [nbPopover]="cardComponent" test-id="card2">With card</button>
       </nb-card-body>
     </nb-card>
   </div>
@@ -103,52 +103,52 @@
       <nb-card-body class="debounce-card">
         <p>Quickly move mouse cursor over the buttons, only the last popover will be created. It allows us to avoid excess white improving page performance.</p>
 
-        <button nbButton nbPopover="Popover!" nbPopoverTrigger="hint">
+        <button nbButton nbPopover="Popover!" nbPopoverTrigger="hint" test-id="hint1">
           show hint
         </button>
-        <button nbButton nbPopover="Popover!" nbPopoverTrigger="hint">
+        <button nbButton nbPopover="Popover!" nbPopoverTrigger="hint" test-id="hint2">
           show hint
         </button>
-        <button nbButton nbPopover="Popover!" nbPopoverTrigger="hint">
+        <button nbButton nbPopover="Popover!" nbPopoverTrigger="hint" test-id="hint3">
           show hint
         </button>
-        <button nbButton nbPopover="Popover!" nbPopoverTrigger="hint">
+        <button nbButton nbPopover="Popover!" nbPopoverTrigger="hint" test-id="hint4">
           show hint
         </button>
-        <button nbButton nbPopover="Popover!" nbPopoverTrigger="hint">
+        <button nbButton nbPopover="Popover!" nbPopoverTrigger="hint" test-id="hint5">
           show hint
         </button>
-        <button nbButton nbPopover="Popover!" nbPopoverTrigger="hint">
+        <button nbButton nbPopover="Popover!" nbPopoverTrigger="hint" test-id="hint6">
           show hint
         </button>
-        <button nbButton nbPopover="Popover!" nbPopoverTrigger="hint">
+        <button nbButton nbPopover="Popover!" nbPopoverTrigger="hint" test-id="hint7">
           show hint
         </button>
-        <button nbButton nbPopover="Popover!" nbPopoverTrigger="hint">
+        <button nbButton nbPopover="Popover!" nbPopoverTrigger="hint" test-id="hint8">
           show hint
         </button>
-        <button nbButton nbPopover="Popover!" nbPopoverTrigger="hint">
+        <button nbButton nbPopover="Popover!" nbPopoverTrigger="hint" test-id="hint9">
           show hint
         </button>
-        <button nbButton nbPopover="Popover!" nbPopoverTrigger="hint">
+        <button nbButton nbPopover="Popover!" nbPopoverTrigger="hint" test-id="hint10">
           show hint
         </button>
-        <button nbButton nbPopover="Popover!" nbPopoverTrigger="hint">
+        <button nbButton nbPopover="Popover!" nbPopoverTrigger="hint" test-id="hint11">
           show hint
         </button>
-        <button nbButton nbPopover="Popover!" nbPopoverTrigger="hint">
+        <button nbButton nbPopover="Popover!" nbPopoverTrigger="hint" test-id="hint12">
           show hint
         </button>
-        <button nbButton nbPopover="Popover!" nbPopoverTrigger="hint">
+        <button nbButton nbPopover="Popover!" nbPopoverTrigger="hint" test-id="hint13">
           show hint
         </button>
-        <button nbButton nbPopover="Popover!" nbPopoverTrigger="hint">
+        <button nbButton nbPopover="Popover!" nbPopoverTrigger="hint" test-id="hint14">
           show hint
         </button>
-        <button nbButton nbPopover="Popover!" nbPopoverTrigger="hint">
+        <button nbButton nbPopover="Popover!" nbPopoverTrigger="hint" test-id="hint15">
           show hint
         </button>
-        <button nbButton nbPopover="Popover!" nbPopoverTrigger="hint">
+        <button nbButton nbPopover="Popover!" nbPopoverTrigger="hint" test-id="hint16">
           show hint
         </button>
       </nb-card-body>

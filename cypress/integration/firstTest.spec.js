@@ -99,6 +99,12 @@ describe('Our first suite',() => {
         // cy.contains('nb-card','Horizontal form').find('[type="email"]')
 
 
+        it.only('Run this test first', () => {
+            cy.visit('/')
+            cy.contains('Modal and Overlays').click()
+        })
+
+
     
 
 
