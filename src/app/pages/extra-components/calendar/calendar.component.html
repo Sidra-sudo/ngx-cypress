@@ -3,13 +3,13 @@
     <span class="subtitle">
       Selected date: {{ date | date }}
     </span>
-    <nb-calendar [(date)]="date" [boundingMonth]="true"></nb-calendar>
+    <nb-calendar [(date)]="date" [boundingMonth]="true" test-id="select date"></nb-calendar>
   </div>
   <div class="calendar-container">
     <span class="subtitle">
       Selected range: {{ range.start | date }} - {{ range.end | date }}
     </span>
-    <nb-calendar-range [(range)]="range"></nb-calendar-range>
+    <nb-calendar-range [(range)]="range" test-id="selectRange"></nb-calendar-range>
   </div>
   <div class="calendar-container">
     <span class="subtitle">
@@ -17,7 +17,7 @@
     </span>
     <nb-calendar
       [(date)]="date2"
-      [dayCellComponent]="dayCellComponent"
+      [dayCellComponent]="dayCellComponent" test-id="click date"
     ></nb-calendar>
   </div>
 </div>
