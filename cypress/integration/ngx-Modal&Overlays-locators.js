@@ -1,3 +1,5 @@
+import { retry } from "rxjs-compat/operator/retry"
+
 class ModalOverlaysFeatures{
 
     ClickModalLayout(){
@@ -149,14 +151,133 @@ class ModalOverlaysFeatures{
     ComponentpopoverwithCard(){
         return cy.get('[test-id="card2"]')
     }
-    ClickonSecondTab(){
-        return cy.contains('Second Tab')
+    EvenDebouncing1(){
+        return cy.get('[test-id="hint1"]')
     }
-    ClickonWhatsup(){
-        return cy.contains('Whats up?')
+    EvenDebouncing2(){
+        return cy.get('[test-id="hint2"]')
     }
-
-
+    EvenDebouncing3(){
+        return cy.get('[test-id="hint3"]')
+    }
+    EvenDebouncing4(){
+        return cy.get('[test-id="hint4"]')
+    }
+    EvenDebouncing5(){
+        return cy.get('[test-id="hint5"]')
+    }
+    EvenDebouncing6(){
+        return cy.get('[test-id="hint6"]')
+    }
+    EvenDebouncing7(){
+        return cy.get('[test-id="hint7"]')
+    }
+    EvenDebouncing8(){
+        return cy.get('[test-id="hint8"]')
+    }
+    EvenDebouncing9(){
+        return cy.get('[test-id="hint9"]')
+    }
+    EvenDebouncing10(){
+        return cy.get('[test-id="hint10"]')
+    }
+    EvenDebouncing11(){
+        return cy.get('[test-id="hint11"]')
+    }
+    EvenDebouncing12(){
+        return cy.get('[test-id="hint12"]')
+    }
+    EvenDebouncing13(){
+        return cy.get('[test-id="hint13"]')
+    }
+    EvenDebouncing14(){
+        return cy.get('[test-id="hint14"]')
+    }
+    EvenDebouncing15(){
+        return cy.get('[test-id="hint15"]')
+    }
+    EvenDebouncing16(){
+        return cy.get('[test-id="hint16"]')
+    }
+    //Toastr
+    ClickToastr(){
+        return cy.contains('Toastr')
+    }
+    //Toaster configuration
+    ClickPoistion(){
+        return cy.get('.position-select').should('have.text','top-right')   //By Linktext
+    }
+    Selecttopend(){
+        return cy.contains('top-end')
+    }
+    Addtitle(){
+        return cy.get('input[name="title"]')             //By name
+    }
+    Addcontent(){
+        return cy.get('input[name="content"]')            
+    }
+    Timetohidetoast(){
+        return cy.get('input[ng-reflect-model="2022"]')
+    }
+    ClickToasttype(){
+        // return cy.get('nb-select[.select-button]').should('have.text','primary')
+        return cy.contains('primary')
+    }
+    Selectwarning(){
+        return cy.contains('warning')
+    }
+    Clicktoastcheckbox(){
+        return cy.get('[test-id="hide"]')   //By Linktext
+    }
+    ClickonShowToast(){
+        return cy.get('[test-id="show toast"]')
+    }
+    ClickRandomToast(){
+        return cy.get('[test-id="random toast"]')
+    }
+    //Tooltip
+    ClickTooltip(){
+        return cy.contains('Tooltip')
+    }
+    //Tooltip With Icon
+    Mouseoverontooltip1(){
+        return cy.get('[test-id="show tooltip1"]')
+    }
+    Mouseoverontooltip2(){
+        return cy.get('[test-id="show tooltip2"]')
+    }
+    // Tooltip Placements
+    Tooltiptop(){
+        return cy.get('[test-id="top"]')
+    }
+    Tooltipright(){
+        return cy.get('[test-id="right"]')
+    }
+    Tooltipbottom(){
+        return cy.get('[test-id="bottom"]')
+    }
+    Tooltiponleft(){
+        return cy.get('[test-id="left"]')
+    }
+    //Colored Tooltips
+    Tooltipdefault(){
+        return cy.get('[test-id="defult"]')
+    }
+    Tooltipprimary(){
+        return cy.get('[test-id="primary"]')
+    }
+    Tooltipsuccess(){
+        return cy.get('[test-id="success"]')
+    }
+    Tooltipdanger(){
+        return cy.get('[test-id="danger"]')
+    }
+    Tooltipinfo(){
+        return cy.get('[test-id="info"]')
+    }
+    Tooltipwarning(){
+        return cy.get('[test-id="warning"]')
+    }
 
 }
 export default ModalOverlaysFeatures
