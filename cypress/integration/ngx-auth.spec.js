@@ -144,3 +144,7 @@ describe('NGX Admin Authentication Feature', () => {
         })
     })
 })
+describe('NGX Admin Automation Completed', () => {
+    const Auth = new AuthenticationFeatures();
+
+})
