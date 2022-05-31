@@ -1,6 +1,6 @@
 import FormsFeatures from "/home/dev/Desktop/Auto-ngx/cypress/integration/ngx-Forms-locators.js"; 
 
-describe('NGX Admin Layout Feature', () => {
+describe('NGX Forms Feature', () => {
     const Form = new FormsFeatures();
 
     before(() => {

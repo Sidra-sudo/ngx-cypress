@@ -1,6 +1,6 @@
 import TablesandDataFeatures from "/home/dev/Desktop/Auto-ngx/cypress/integration/ngx-tablesdata-locators.js"; 
 
-describe('NGX Admin Modal & Overlays Feature', () => {
+describe('NGX Admin Tables and Data Feature', () => {
     const Table = new TablesandDataFeatures();
 
     before(() => {
@@ -169,11 +169,6 @@ describe('NGX Admin Modal & Overlays Feature', () => {
             Table.Clicksidebartoggle()
             .click()
         })
-        // it('Should verify that Tables & Data Feature is clickable', () => {
-        //     Table.ClickTablesandData()
-        //     .click()
-        // })
-        //ClickCalendar
         it('Should verify that Smart Table Feature is clickable under Tables & Data', () => {
             Table.ClickTreeGrid()
             .click()

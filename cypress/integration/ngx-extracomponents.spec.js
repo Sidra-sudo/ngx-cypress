@@ -1,6 +1,6 @@
 import ExtraComponentsFeatures from "/home/dev/Desktop/Auto-ngx/cypress/integration/ngx-extra-components-locators.js"; 
 
-describe('NGX Admin Modal & Overlays Feature', () => {
+describe('NGX Admin Extra Components Feature', () => {
     const Component = new ExtraComponentsFeatures();
 
     before(() => {
