@@ -76,5 +76,6 @@ class TablesandDataFeatures{
     ClickonSearch(){
         return cy.get('#search')
     }
+    //final
 }
 export default TablesandDataFeatures
