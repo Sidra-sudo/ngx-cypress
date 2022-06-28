@@ -192,6 +192,7 @@ describe('NGX Admin Tables and Data Feature', () => {
             .click()
             cy.wait(1000)
         })
+        //circlci
         it('Should verify that user is able to click on search', () => {
             Table.ClickonSearch()
             .type('project')
