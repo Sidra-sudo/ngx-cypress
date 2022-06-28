@@ -2,7 +2,7 @@ import FormsFeatures from "/home/dev/Desktop/Auto-ngx/cypress/integration/ngx-Fo
 
 describe('NGX Forms Feature', () => {
     const Form = new FormsFeatures();
-
+// login
     before(() => {
         cy.visit('http://localhost:4200/')
     })
