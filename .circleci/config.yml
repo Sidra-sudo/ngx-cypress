@@ -5,3 +5,19 @@ workflows:
   build:
     jobs:
       - cypress/run
+workflows:
+  version: 2.1
+  commit-workflow:
+    jobs:
+      - build
+  schedule-workflow:
+    triggers:
+      - schedule:
+          cron: "0 * * * *"
+          filters:
+            branches:
+              only:
+                - new-branch
+    jobs:
+      - build
+      - deploy
