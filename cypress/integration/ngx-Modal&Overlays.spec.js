@@ -115,11 +115,11 @@ describe('NGX Admin Modal & Overlays Feature', () => {
             Modal.Clicksidebartoggle()
             .click()
         })
-        it('Should verify that Modal and Overlays Feature is clickable', () => {
-            Modal.ClickModalLayout()
-            .click()
-        })
-        it('Should verify that Dialog Feature is clickable under Modal and Overlays', () => {
+        // it('Should verify that Modal and Overlays Feature is clickable', () => {
+        //     Modal.ClickModalLayout()
+        //     .click()
+        // })
+        it('Should verify that Window Feature is clickable under Modal and Overlays', () => {
             Modal.ClickWindow()
             .click()
         })
@@ -193,10 +193,10 @@ describe('NGX Admin Modal & Overlays Feature', () => {
             Modal.Clicksidebartoggle()
             .click()
         })
-        it('Should verify that Modal and Overlays Feature is clickable', () => {
-            Modal.ClickModalLayout()
-            .click()
-        })
+        // it('Should verify that Modal and Overlays Feature is clickable', () => {
+        //     Modal.ClickModalLayout()
+        //     .click()
+        // })
         it('Should verify that Popover Feature is clickable under Modal and Overlays', () => {
             Modal.ClickPopover()
             .click()
@@ -357,10 +357,10 @@ describe('NGX Admin Modal & Overlays Feature', () => {
             Modal.Clicksidebartoggle()
             .click()
         })
-        it('Should verify that Modal and Overlays Feature is clickable', () => {
-            Modal.ClickModalLayout()
-            .click()
-        })
+        // it('Should verify that Modal and Overlays Feature is clickable', () => {
+        //     Modal.ClickModalLayout()
+        //     .click()
+        // })
         it('Should verify that Popover Feature is clickable under Modal and Overlays', () => {
             Modal.ClickToastr()
             .click()

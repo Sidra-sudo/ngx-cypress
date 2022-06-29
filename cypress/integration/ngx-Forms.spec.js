@@ -154,10 +154,10 @@ describe('NGX Forms Feature', () => {
             Form.ClickCommonDatepicker()
             .click()
         })
-        it('Should verify that user is able to click on back button of calendar Form picker from Common date picker', () => {
-            Form.Clickbackbutton()
-            .click()
-        })
+        // it('Should verify that user is able to click on back button of calendar Form picker from Common date picker', () => {
+        //     Form.Clickbackbutton()
+        //     .click({ multiple: true })
+        // })
         it('Should verify that Datepicker is clickable', () => {
             Form.clicknextbutton()
             .click()

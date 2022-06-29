@@ -14,7 +14,7 @@ class ExtraComponentsFeatures{
         return cy.get('[test-id="sidebar"]')
     }
     ClickCalendarbutton(){
-        return cy.contains(' May 2022 ')
+        return cy.contains(' Jun 2022 ')
     }
     Click2021year(){
         return cy.contains('2021')
@@ -47,7 +47,7 @@ class ExtraComponentsFeatures{
         return cy.contains(' Selected range: Jan 23, 2000 - Jan 23, 2022 ')
     }
     Clickondate(){
-        return cy.contains(' Selected date: May 17, 2022 ')
+        return cy.contains(' Selected date: Jun 17, 2022 ')
     }
 
 

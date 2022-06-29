@@ -106,12 +106,12 @@ class FormsFeatures{
     ClickCommonDatepicker(){
         return cy.get('[test-id="Form-picker"]')
     }
-    // Clickbackbutton(){
-    //     return cy.get('nb-icon[ng-reflect-icon="chevron-left-outline"]')
-    // }
-    // clicknextbutton(){
-    //     return cy.get('nb-icon[ng-reflect-icon="chevron-right-outline"]')
-    // }
+    Clickbackbutton(){
+        return cy.get('nb-icon[ng-reflect-icon="chevron-left-outline"]')
+    }
+    clicknextbutton(){
+        return cy.get('nb-icon[ng-reflect-icon="chevron-right-outline"]')
+    }
     ClickonDate(){
         return cy.get('nb-calendar-day-picker').contains('17')
     }
