@@ -1,4 +1,4 @@
-import AuthenticationFeatures from "/home/dev/Desktop/Auto-ngx/cypress/integration/ngx-auth-locators.js"; 
+import AuthenticationFeatures from "./ngx-auth-locators"; 
 
 describe('NGX Admin Authentication Feature', () => {
     const Auth = new AuthenticationFeatures();

@@ -1,4 +1,4 @@
-import ExtraComponentsFeatures from "/home/dev/Desktop/Auto-ngx/cypress/integration/ngx-extra-components-locators.js"; 
+import ExtraComponentsFeatures from "./ngx-extra-components-locators"; 
 
 describe('NGX Admin Extra Components Feature', () => {
     const Component = new ExtraComponentsFeatures();

@@ -1,4 +1,4 @@
-import FormsFeatures from "/home/dev/Desktop/Auto-ngx/cypress/integration/ngx-Forms-locators.js"; 
+import FormsFeatures from "./ngx-Forms-locators"; 
 
 describe('NGX Forms Feature', () => {
     const Form = new FormsFeatures();

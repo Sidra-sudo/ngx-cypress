@@ -1,4 +1,4 @@
-import LayoutFeatures from "/home/dev/Desktop/Auto-ngx/cypress/integration/ngx-layout-locators.js"; 
+import LayoutFeatures from "./ngx-layout-locators"; 
 
 describe('NGX Admin Layout Feature', () => {
     const Layout = new LayoutFeatures();

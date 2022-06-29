@@ -1,4 +1,5 @@
-import ModalOverlaysFeatures from "/home/dev/Desktop/Auto-ngx/cypress/integration/ngx-Modal&Overlays-locators.js"; 
+import ModalOverlaysFeatures from "./ngx-Modal&Overlays-locators"; 
+// import ECommerce from "./Ecommerce-locators";
 
 describe('NGX Admin Modal & Overlays Feature', () => {
     const Modal = new ModalOverlaysFeatures();

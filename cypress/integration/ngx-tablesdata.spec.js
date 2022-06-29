@@ -1,4 +1,4 @@
-import TablesandDataFeatures from "/home/dev/Desktop/Auto-ngx/cypress/integration/ngx-tablesdata-locators.js"; 
+import TablesandDataFeatures from "./ngx-tablesdata-locators"; 
 
 describe('NGX Admin Tables and Data Feature', () => {
     const Table = new TablesandDataFeatures();
