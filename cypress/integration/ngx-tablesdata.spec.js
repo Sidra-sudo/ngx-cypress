@@ -15,7 +15,7 @@ describe('NGX Admin Tables and Data Feature', () => {
             Table.ClickTablesandData()
             .click()
         })
-        //ClickCalendar
+        //ClickonCalendar
         it('Should verify that Smart Table Feature is clickable under Tables & Data', () => {
             Table.ClickSmartTable()
             .click()
